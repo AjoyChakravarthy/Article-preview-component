@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1.0"
+      />
+
+      <link
+         rel="icon"
+         type="image/png"
+         sizes="32x32"
+         href="./images/favicon-32x32.png"
+      />
+      <link
+         rel="preconnect"
+         href="https://fonts.googleapis.com"
+      />
+      <link
+         rel="preconnect"
+         href="https://fonts.gstatic.com"
+         crossorigin
+      />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+         rel="stylesheet"
+      />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      />
+
+      <link
+         rel="stylesheet"
+         href="./styles.css"
+      />
+
+      <title>Frontend Mentor | Article preview component</title>
+   </head>
+   <body>
+      <main>
+         <article>
+            <div class="image-container">
+               <img
+                  src="./images/drawers.jpg"
+                  alt="drawers"
+                  class="image"
+               />
+            </div>
+            <div class="content">
+               <h1>
+                  Shift the overall look and feel by adding these wonderful
+                  touches to furniture in your home
+               </h1>
+               <p>
+                  Ever been in a room and felt like something was missing?
+                  Perhaps it felt slightly bare and uninviting. I’ve got some
+                  simple tips to help you make any room feel complete.
+               </p>
+
+               <div class="author-container">
+                  <div class="author">
+                     <img
+                        src="./images/avatar-michelle.jpg"
+                        alt="avatar"
+                        class="avatar"
+                     />
+                     <div class="author-content">
+                        <h2>Michelle Appleton</h2>
+                        <p>28 Jun 2020</p>
+                     </div>
+                  </div>
+
+                  <button class="btn">
+                     <i class="fa-solid fa-share"></i>
+                  </button>
+               </div>
+               <div
+                  class="share-options"
+                  id="shareOptions"
+               >
+                  <div class="options">
+                     <span>SHARE</span>
+                     <a
+                        href=""
+                        target="_blank"
+                     >
+                        <i class="fa-brands fa-square-facebook"></i>
+                     </a>
+                     <a
+                        href=""
+                        target="_blank"
+                     >
+                        <i class="fa-brands fa-twitter"></i>
+                     </a>
+                     <a
+                        href=""
+                        target="_blank"
+                     >
+                        <i class="fa-brands fa-pinterest"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </article>
+      </main>
+
+      <script>
+         const btn = document.querySelector(".btn");
+         const shareOptions = document.querySelector("#shareOptions");
+         btn.addEventListener("click", () => {
+            shareOptions.classList.toggle("show");
+            btn.classList.toggle("active");
+         });
+         // Hide when clicking outside
+         document.addEventListener("click", (event) => {
+            if (
+               !btn.contains(event.target) &&
+               !shareOptions.contains(event.target)
+            ) {
+               shareOptions.classList.remove("show");
+            }
+         });
+      </script>
+   </body>
+</html>
