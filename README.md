@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
--  Solution URL: [](https://your-solution-url.com](https://github.com/AjoyChakravarthy/Article-preview-component)
--  Live Site URL: [](https://your-live-site-url.com](https://article-preview-component-chi-three.vercel.app/)
+-  Solution URL: [Github](https://your-solution-url.com](https://github.com/AjoyChakravarthy/Article-preview-component)
+-  Live Site URL: [vercel](https://your-live-site-url.com](https://article-preview-component-chi-three.vercel.app/)
 
 ## My process
 
